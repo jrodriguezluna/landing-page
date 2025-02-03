@@ -1,0 +1,242 @@
+/* If someone sees this, don't judge, i tried to make it somewhat responsive but all 
+my ideas (like using a specific height for each element) ended up working against 
+me. A lot of the css content is redundant and need polishing, but this is it for me 
+(need to keep pushing forward, and, it does not have to be perfect). Anyways, 
+I learned a couple of things so time in this page was time well spent */
+
+html {
+font-family: Roboto;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.header-main-section,
+.images-section,
+.quote-section,
+.call-to-action-footer {
+	height: 650px;
+}
+
+.header-main-section {
+	background-color: #1F2937;
+	display: flex;
+	justify-content: center;
+}
+
+a,
+.logo,
+.title {
+	color: #F9FAF8;}
+
+.quotes-section {
+	background-color: #E5E7EB;
+}
+
+ul {
+	margin: 0;
+	font-size: 18px;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+	gap: 32px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.center {
+	background-color: #1F2937;
+	display: flex;
+	flex-direction: column;
+}
+
+.header,
+.footer {
+	background-color: #1F2937;
+	display: flex;
+	justify-content: center;
+	max-height: 83px;
+}
+
+.header-container {
+	max-width: 1350px;
+	padding-top: 16px;
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: 900;}
+
+
+.main-section-container {
+	margin: auto;
+	max-width: 1350px;
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.main-section-container .column {
+	gap: 16px;
+	font-size: 20px;
+} 
+
+.column .title {
+	font-size: 56px;
+	font-weight: 900;
+}
+
+.main-section-container .text {
+	color: #E5E7EB;
+}
+
+.button {
+	font-size: 18px;
+	display: block;
+  width: 160px;
+  background: #3882F6;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.main-section-container img {
+	flex-shrink: 1;
+	min-width: 100%;
+	min-height: 100%;
+	justify-content: center;
+	object-fit: cover;
+}
+
+.images-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content {	
+	width: 1350px;
+}
+
+.images-section .title {
+	font-size: 36px;
+	color: #1F2937;
+	font-weight: 900;
+	text-align: center;
+	padding: 64px;
+} 
+
+.images-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 104px;
+}
+
+.images-container .column {
+	font-size: 18px;
+	max-width: 220px;
+	color: #1F2937;
+	text-align: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.images-section img {
+	flex-shrink: 0;
+	width: 100%;
+	height: auto;
+	border: #3882F6 5px solid;
+	border-radius: 10px;
+	justify-content: center;
+	object-fit: cover;
+}
+
+.quote-section {
+	background-color: #E5E7EB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.quote-container {
+	max-width: 1350px;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 104px;
+}
+
+.quote {
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.quoter {
+	align-self: flex-end;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.footer {
+	font-size: 16px;
+	padding: 32px;
+	color: white;
+}
+.call-to-action-footer {
+	display: flex;
+}
+
+.call-to-action-footer .center {
+	background-color: white;
+	color: white;
+	flex: 1;
+}
+
+.call-to-action-card {
+	width: 1350px;
+	height: 250px;
+	background-color: #3882F6;
+	font-size: 24px;
+	border-radius: 10px;
+	margin: auto;	
+	padding: 0px 160px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.forth-container {
+	width: 1000px;
+}
+
+.forth-container .title {
+	font-weight: 900;
+}
+
+.call-to-action-card .button {
+	border: #F9FAF8 3px solid;
+}
+
+
